@@ -1,11 +1,11 @@
 package com.wcunha.robo.pageObjects;
 
-import com.wcunha.robo.util.suporteAutomato;
+import com.wcunha.robo.util.SuporteAutomato;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class pageResearchGoogle {
-    suporteAutomato suporte = new suporteAutomato();
+public class PageResearchGoogle {
+    SuporteAutomato suporte = new SuporteAutomato();
     WebElement caixaDePesquisa;
     WebElement botaoDePesquisa;
     WebElement logoDoGoogle;

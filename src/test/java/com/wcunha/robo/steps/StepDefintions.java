@@ -1,15 +1,14 @@
 package com.wcunha.robo.steps;
 
-import com.wcunha.robo.pageObjects.pageResearchGoogle;
+import com.wcunha.robo.pageObjects.PageResearchGoogle;
 import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import org.junit.Assert;
 
-public class stepDefintions {
+public class StepDefintions {
 
-    pageResearchGoogle pagina = new pageResearchGoogle();
+    PageResearchGoogle pagina = new PageResearchGoogle();
 
     @Dado("^que acessei o Google$")
     public void que_acessei_o_Google() throws Throwable {

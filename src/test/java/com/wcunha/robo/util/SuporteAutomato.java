@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static io.github.bonigarcia.wdm.DriverManagerType.CHROME;
 
-public class suporteAutomato {
+public class SuporteAutomato {
 
     WebDriver driver;
 
