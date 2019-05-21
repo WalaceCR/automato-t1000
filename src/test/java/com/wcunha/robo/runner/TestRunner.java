@@ -11,24 +11,23 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "classpath:Features",
         glue = {"com.wcunha.robo.steps"},
         plugin = { "pretty", "html:target/cucumber-reports" })
-public class StarterTest {
+public class TestRunner {
 
+    /*capturo apenas a instância da classe SuporteAutomato*/
     static SuporteAutomato sup = SuporteAutomato.getInstance();
 
+    /*antes de todos os testes*/
     @BeforeClass()
     public static void setUp(){
         sup.setarChrome();
 
     }
 
+    /*depois de todos os testes*/
     @AfterClass()
     public static void tearDown(){
         sup.fecharChrome();
 
     }
-
-
-
-
 
 }
