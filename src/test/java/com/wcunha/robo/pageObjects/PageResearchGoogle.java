@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class PageResearchGoogle {
-    SuporteAutomato suporte = new SuporteAutomato();
+    SuporteAutomato suporte = SuporteAutomato.getInstance();
     WebElement caixaDePesquisa;
     WebElement botaoDePesquisa;
     WebElement logoDoGoogle;
@@ -13,7 +13,6 @@ public class PageResearchGoogle {
 
 
     public void  navegarateapaginadoGoogle(){
-        suporte.setarChrome();
         suporte.getDriver().navigate().to("https://www.google.com.br/");
     }
 
@@ -35,7 +34,7 @@ public class PageResearchGoogle {
 
 
     public boolean estounateladeresultados(){
-        itemdePesquisa = suporte.getDriver().findElement(By.xpath("//*[contains(text(),'Grupo F')]"));
+        itemdePesquisa = suporte.getDriver().findElement(By.xpath("//h3[contains(text(),'Luana Steck - Business')]"));
         suporte.isClickable(itemdePesquisa);
         return itemdePesquisa.isDisplayed();
     }
