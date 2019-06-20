@@ -2,7 +2,7 @@ package com.wcunha.robo.steps;
 
 import com.wcunha.robo.pageObjects.PageResearchGoogle;
 import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Então;
+import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import org.junit.Assert;
 
@@ -31,7 +31,7 @@ public class StepDefintions {
         pagina.clicarEmPesquisar();
     }
 
-    @Então("^são exibidos os resultados da busca$")
+    @Entao("^são exibidos os resultados da busca$")
     public void são_exibidos_os_resultados_da_busca(){
         Assert.assertTrue(pagina.estounateladeresultados());
     }
